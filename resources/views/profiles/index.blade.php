@@ -11,23 +11,20 @@
                 <h1>{{ $user->username }}</h1>
                 <a href="/p/create">Add New Post</a>
             </div>
+
+        <a href="/profile/{{$user->id}}/edit">Edit Post</a>
+
             <div class="d-flex">
             <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
             <div class="pr-5"><strong>100k</strong> followers</div>
             <div class="pr-5"><strong>200</strong> following</div>
         </div>
         <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+
         <div>{{ $user->profile->description }}</div>
-        <!-- <div class="">GIFT - COLLECTION
-                        Hias Ruangan | Suvenir
-        </div>.
-        <div class="">PRICE /pcs start from Rp15.000>
-                        5 pcs dapat SPECIAL PRICE *sesuai pilihan*
-        </div>.
-        <div class="">WA 087789195761
-                        MLG-IDN</div> -->
-        <!-- <div><a href=#>www.cactusmalang.inc</a></div> -->
+
         <div><a href=#>{{ $user->profile->url }}</a></div>
+
     </div>
 
     <div class="row pt-5">
