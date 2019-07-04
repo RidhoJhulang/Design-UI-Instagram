@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     protected $guarded = [];
+
+    public function profileImage()
+    {
+        $imagePath = ($this->image) ? $this->image : 'profile/Efp4X1AxvocgeZjpsyZ7YX5re7FDLJ1DiDkMbIdF.png';
+
+        return '/storage/' . $imagePath;
+    }
     
     public function user() 
     {
