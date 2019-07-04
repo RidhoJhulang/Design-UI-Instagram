@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <img src="https://image.flaticon.com/icons/svg/874/874979.svg" class="rounded-circle">
+        <img src="/storage/{{$user->profile->image}}" class="rounded-circle w-100">
         </div>
         <div class="col-8 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
@@ -19,7 +19,7 @@
 
         @can ('update', $user->profile)
             
-            <a href="/profile/{{$user->id}}/edit">Edit Post</a>
+            <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
         
         @endcan
 
