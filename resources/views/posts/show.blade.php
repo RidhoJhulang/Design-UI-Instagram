@@ -13,7 +13,16 @@
                         <img src="/storage/{{ $post->user->profile->image }}" class="rounded-circle w-100" style="max-width:50px;">                   
                    </div> 
                 <div>
-                <div class="font-weight-bold"><a href="/profile/{{ $post->user->id }}"><span class="text-dark">{{ $post->user->username }}</span></a></div>
+                <div class="font-weight-bold">
+                    <a href="/profile/{{ $post->user->id }}">
+                        <span class="text-dark">
+                            {{ $post->user->username }}
+                        </span>
+                    </a> 
+
+                    <a href="#" class="pl-2">Follow</a>
+                
+                </div>
                 </div>
             </div>
 
