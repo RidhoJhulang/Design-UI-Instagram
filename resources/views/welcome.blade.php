@@ -80,8 +80,11 @@
             @endif
 
             <div class="content">
+                    
+                <div><img src="/svg/palm.svg" style="height: 70px;" class="pr-3"></div>
+
                 <div class="title m-b-md">
-                    CACTUS.INC
+                    Instaplans
                 </div>
 
                 <div class="links">
