@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,7 +18,7 @@ Route::get('/', function () {
 
 Route::post('follow/{user}', 'FollowsController@store');
 
-Auth::routes();
+
 
 Route::get('/p/create', 'PostsController@create');
 Route::post('/p', 'PostsController@store');
