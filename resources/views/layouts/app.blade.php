@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex" href="#">
+                    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     {{-- <div><img src="/svg/left-arrow.svg" style="height: 15px;" class="float-sm-left"></div> --}}
                     <div><img src="/svg/palm.svg" style="height: 27px; border-right: 1px solid #333;" class="pr-3"></div>
                     <div class="pl-3 pt-1"> Instaplants </div>
